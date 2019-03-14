@@ -1,0 +1,19 @@
+Referência:
+https://dzone.com/articles/deploying-spring-boot-on-docker
+
+Exemplo
+Criei projeto simples do Spring boot + WEB
+Crei um controlador simples de testes
+Criei DockerFile
+
+No terminal
+Acessei a pasta que tem o DockerFile
+Usei o comando:
+     sudo docker build -f DockerFile -t demowithdocker .
+
+A segunda parte tem que ser tudo minusculo e tem "." no final
+Comando para ver se imagem está lá:
+     sudo docker images
+
+Comando para executar aplicação no container:
+     sudo docker run -p 8080:8080 demowithdocker
